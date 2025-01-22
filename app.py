@@ -9,12 +9,12 @@ import time
 from pathlib import Path
 
 import tempfile
-
+# Load environment variables for env keys 
 from dotenv import load_dotenv
 load_dotenv()
 
 import os
-
+# Get API key
 API_KEY=os.getenv("GOOGLE_API_KEY")
 if API_KEY:
     genai.configure(api_key=API_KEY)
@@ -25,7 +25,7 @@ st.set_page_config(
     page_icon="🎥",
     layout="wide"
 )
-
+# Set title and header
 st.title("Phidata Video AI Summarizer Agent 🎥🎤🖬")
 st.header("Powered by Gemini 2.0 Flash Exp")
 
@@ -44,7 +44,7 @@ multimodal_Agent=initialize_agent()
 
 # File uploader
 video_file = st.file_uploader(
-    "Upload a video file", type=['mp4', 'mov', 'avi'], help="Upload a video for AI analysis"
+    "Upload a video file", type=['mp4', 'mov', 'avi'], help="Upload a video for AI analysis" # Support for Mov, mp4 and mvi
 )
 
 if video_file:
