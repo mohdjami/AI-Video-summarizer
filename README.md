@@ -47,18 +47,6 @@ A powerful video analysis tool that leverages Google's Gemini AI to provide inte
    streamlit run app.py
    ```
 
-## 🐳 Docker Deployment
-
-Build and run using Docker:
-
-```bash
-# Build the image
-docker build -t ai-video-summarizer .
-
-# Run the container
-docker run -p 8501:8501 -e GOOGLE_API_KEY=your_api_key_here ai-video-summarizer
-```
-
 ## 🏗️ Architecture
 
 The application follows a layered architecture:
