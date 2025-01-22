@@ -22,7 +22,7 @@ A powerful video analysis tool that leverages Google's Gemini AI to provide inte
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone git@github.com:mohdjami/AI-Video-summarizer.git
    cd ai-video-summarizer
    ```
 
